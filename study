@@ -1,0 +1,28 @@
+#include <iostream>
+#include<string>
+#define _USE_MATH_DEFINES 
+#include<math.h>
+using namespace std;
+void test()
+{
+	double pivalue = M_PI;
+	int c = 0;
+
+	
+	cin >> c;
+	int arr[10];
+	for (int i = 0; i < c; i++)
+	{
+		int s = pow(10, i + 1);
+		arr[i] = (int)(pivalue * s )% 10;
+		cout<<arr[i]<<endl;
+	}
+
+}
+
+int main(void)
+{
+	test();
+	system("pause");
+	return 0;
+}
