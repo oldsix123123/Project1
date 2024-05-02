@@ -1,0 +1,29 @@
+#include <iostream>
+#include<stack>
+#include<string>
+using namespace std;
+void test()
+{
+	//十进制转换为二进制
+	int a;
+	cin >> a;
+	stack<int>s;
+	for (int i=0;i<8;i++)
+	{
+		s.push(a%2);
+		a = a / 2;
+	}
+	for (int i = 0; i < 8; i++)
+	{
+		
+		
+		cout << s.top()<< endl;
+		s.pop();
+	}
+}
+int main(void)
+{
+	test();
+	system("pause");
+	return 0;
+}
